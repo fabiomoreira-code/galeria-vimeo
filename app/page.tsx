@@ -176,27 +176,48 @@ export default function ObsidianGallery() {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl md:text-7xl font-black tracking-tight mb-4 md:mb-8 leading-none text-white">
-                  O Arquivo Silencioso
-                </h1>
-                
-                <p className="text-base md:text-lg text-on-surface-variant md:text-on-surface/80 leading-relaxed mb-8 md:mb-10 font-light hidden md:block">
-                  Um estudo visual experimental que explora a beleza decadente da arquitetura brutalista sob a luz severa e de baixo contraste dos invernos do norte. Uma sinfonia de pedra e sombra.
-                </p>
-                
-                <div className="flex items-center gap-4 md:gap-6">
-                  <button className="bg-primary hover:bg-primary-dim text-on-primary px-6 md:px-10 py-3 md:py-4 rounded-full font-bold flex items-center gap-2 md:gap-3 transition-all transform active:scale-95 shadow-[0_0_30px_rgba(182,160,255,0.3)] text-sm md:text-base">
-                    <Play size={20} className="fill-current" /> ASSISTIR AGORA
-                  </button>
-                  <button className="hidden md:flex bg-surface-bright/60 backdrop-blur-xl text-white px-8 py-4 rounded-full font-bold items-center gap-3 border border-white/10 hover:bg-surface-bright transition-all">
-                    <Plus size={20} /> MINHA LISTA
-                  </button>
-                </div>
-              </div>
+               {/* PLAYER DA LIVE VIMEO - TESTE */}
+          <div className="w-full max-w-5xl mx-auto mb-10 rounded-2xl overflow-hidden bg-black shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 aspect-video">
+            <iframe
+              src="https://vimeo.com/event/5620354/embed"
+              className="w-full h-full"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+              title="Live Stream Teste"
+            ></iframe>
+          </div>
+
+          <div className="relative z-10">
+            <h1 className="text-4xl md:text-7xl font-black tracking-tight mb-4 md:mb-8 leading-none text-white">
+              A Minha Transmissão Ao Vivo
+            </h1>
+            
+            <p className="text-base md:text-lg text-on-surface-variant md:text-on-surface/80 leading-relaxed mb-8 md:mb-10 font-light hidden md:block">
+              Acompanhe agora a nossa live exclusiva. Se o vídeo não carregar automaticamente, clique no botão play no centro do ecrã.
+            </p>
+            
+            <div className="flex items-center gap-4 md:gap-6">
+              <button 
+                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                className="bg-primary hover:bg-primary-dim text-on-primary px-6 md:px-10 py-3 md:py-4 rounded-full font-bold flex items-center gap-2 md:gap-3 transition-all transform active:scale-95 shadow-[0_0_30px_rgba(182,160,255,0.3)] text-sm md:text-base"
+              >
+                <Play size={20} className="fill-current" /> ASSISTIR AGORA
+              </button>
             </div>
           </div>
-        </section>
-
+            
+            <div className="flex items-center gap-4 md:gap-6">
+              <button 
+                onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                className="bg-primary hover:bg-primary-dim text-on-primary px-6 md:px-10 py-3 md:py-4 rounded-full font-bold flex items-center gap-2 md:gap-3 transition-all transform active:scale-95 shadow-[0_0_30px_rgba(182,160,255,0.3)] text-sm md:text-base"
+              >
+                <Play size={20} className="fill-current" /> ASSISTIR AGORA
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
         {/* GALLERY SECTION */}
         <section className="px-6 md:px-16 space-y-8 md:space-y-12">
           <div className="flex justify-between items-end">
