@@ -35,7 +35,7 @@ export default function ObsidianGallery() {
           <button className="md:hidden text-primary hover:bg-surface-container-highest transition-colors p-2 rounded-full">
             <Menu size={24} />
           </button>
-          <span className="text-xl font-black tracking-tighter text-white uppercase">Obsidian Gallery</span>
+          <span className="text-xl font-black tracking-tighter text-white uppercase">O CICLO TÁ ON FRANQUIAS EUDORA C.06</span>
           <div className="hidden md:flex gap-8 items-center">
             <a href="#" className="text-primary border-b-2 border-primary pb-1 font-medium">Cinema</a>
             <a href="#" className="text-on-surface-variant hover:text-white transition-colors duration-300 font-medium">Coleções</a>
