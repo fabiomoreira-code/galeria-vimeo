@@ -75,7 +75,7 @@ export default function ObsidianGallery() {
               <span className="bg-primary/20 text-primary px-2 py-1 rounded text-[10px] font-bold tracking-widest uppercase ring-1 ring-primary/30">AO VIVO</span>
             </div>
             <h1 className="text-4xl md:text-7xl font-black tracking-tight mb-4 md:mb-8 leading-none text-white">
-              A Minha Transmissão Ao Vivo
+            Transmissão Ao Vivo
             </h1>
             <p className="text-base md:text-lg text-on-surface-variant md:text-on-surface/80 leading-relaxed mb-8 md:mb-10 font-light max-w-2xl">
               Acompanhe agora a nossa live exclusiva. Se o vídeo não carregar automaticamente, clique no botão play no centro do ecrã.
